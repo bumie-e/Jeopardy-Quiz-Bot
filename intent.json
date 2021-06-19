@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day", "Hey bot", "Game bot!", "Let's play!"
+      ],
+      "responses": [
+        "Hey there! I am Gamie. I am sure are all fired up for this quiz! \n Let me show you how things work around here. \n\n * You have 10 questions per round. \n\n * You can stop a game at anytime by typing stop. \n\n * No abusive or harrasive comments allowed. \n Reply with CONTINUE to view instructions or SKIP to start game."
+      ]
+    },
+      {
+            "patterns":["continue", 
+                        "CONTINUE"],
+             "responses":["To start game, type START_GAME. \n To end a game, type stop. \n To go to the next question, type NEXT_QUESTION"
+                          ],
+             "tag": "continue"},
+      {
+            "patterns":["skip", "SKIP", "START GAME", "start", "start game",
+                        "SKIP!!!"],
+             "responses":["Ok! Here hold on your laces and get ready for a super ride!"
+                         ],
+         "tag": "skip"},
+      {
+            "patterns":["next", "next game", "NEXT_QUESTION", "NEXT QUESTION"],
+             "responses":["Ok! Coming right up!"
+                         ],
+         "tag": "next"},
+     {
+            "patterns":["END GAME", "stop", "quit",
+                        "End game", 
+                        "Stop game", "quit game",
+                        "finish game"],
+             "responses":["Ok, game ended! You can start another round by typing START GAME!"],
+             "tag": "stop"},
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    }
+  ]
+}
